@@ -3,50 +3,13 @@ title: 初めての方向けガイド
 description: このガイドはアバター販売ショップが制作したものでなく、Project EAUploader が制作したものです。
 ---
 
-# 初めての方向けガイド
-
 このガイドはアバター販売ショップが制作したものでなく、Project EAUploader が制作したものです。
 
-![公式キャラクター　いあ　デザイン　えびごはん](../../../../../assets/ea.png)
+![公式キャラクター　いあ　デザイン　えびごはん](../../../assets/ea.png)
 
 公式キャラクター　いあ　デザイン　えびごはん
 
-# 目次
-
-- [**注意事項・免責事項**](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-- [**導入の方法**](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  1. [導入内容の説明](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  2. [こまったときは](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  3. [導入の方法](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     1. [Unity Hub のダウンロード](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     2. [Unity Hub を起動](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     3. [サインインの完了](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     4. [Install Unity Editor をスキップ](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     5. [ライセンスの認証](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     6. [ライセンスの追加](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     7. [Creator Companion をインストール](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     8. [VCC を起動](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     9. [Unity Editor のインストール](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     10. [Unity インストール完了](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     11. [Unity 準備完了](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     12. [プロジェクトの作成](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     13. [EAUploader の追加（VCC に EAUploader を追加）](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     14. [プロジェクトの起動](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     15. [導入・起動完了](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-- [**導入後**](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  1. [ツール内のガイド](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  2. [バックアップのとり方](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-- [**ご案内**](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  1. [公式コミュニティのご案内](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  2. [公式イベントのご案内](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  3. [開発者・サポートクリエイター募集](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  4. [こまったときは](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  5. [お問い合わせ](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-- [**Option**](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  1. [プロジェクトの起動（パッケージ Import）](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  2. [EAUploader を追加](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-
-# 注意事項・免責事項
+## 注意事項・免責事項
 
 EAUploader は OSS(オープンソースソフトウェア)として開発、提供しているツールです。これは製品ではありません。
 EAUploader を使用して発生したあらゆる損害について、Project EAUplaoder(uslog.tech)はいかなる責任も負いません。
@@ -55,11 +18,10 @@ Unity は様々なバグを抱えています。希に、予測されていな�
 プロジェクトはバックアップをとるようにしてください([本ページ 導入後 バックアップのとり方 を参照](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21))。
 また、アバターのデータなど大切なデータはプロジェクト外にも保存するようにしてください。
 
-# 導入の方法
 
 ## 導入内容の説明
 
-**導入するソフトウェア**
+### 導入するソフトウェア
 
 **・Unity Hub**
 ― Unity を管理するためのソフトです。
@@ -87,7 +49,7 @@ EAUploader での操作は Unity に変更を行うものです。Unity は通�
 　 EAUploader でのアバターのアップロードは、VRCSDK の機能を使用するも
 　 のであり、VRCSDK を用いたアップロードと同じです。
 
-## こまったときは
+### こまったときは
 
 <aside>
 💡 EAUploaderの導入、使用中に問題が発生したり、説明にないことが起こって解決できないとき
@@ -283,9 +245,9 @@ VRM アバターを使用したい場合は別ガイド「VRM を使用する」
 
 左下は終了ボタンです。EAUplaoder を閉じる場合は右上の ✕ から閉じてください。
 
-# 導入後
+## 導入後
 
-## ツール内のガイド
+### ツール内のガイド
 
 EAUploader はツール内にガイドがあります。
 
@@ -293,7 +255,7 @@ EAUploader はツール内にガイドがあります。
 
 ツールの使い方やシェーダー、プラグイン、アップロードの説明など、ツールやアバター、作業に関する説明はツール内のガイドをお読みください。
 
-## バックアップの取り方
+### バックアップの取り方
 
 VCC のプロジェクト一覧にて、バックアップをとりたいプロジェクトの一番右の…をクリックしてください。
 
@@ -303,9 +265,9 @@ VCC のプロジェクト一覧にて、バックアップをとりたいプロ�
 
 ![Untitled](getting_started/25.png)
 
-# ご案内
+## ご案内
 
-## 公式コミュニティのご案内
+### 公式コミュニティのご案内
 
 EAUploader の公式 Discord サーバーへ是非ご参加ください。
 アップデートや、プロジェクトの最新情報を告知しています。
@@ -317,7 +279,7 @@ EAUploader の公式 Discord サーバーへ是非ご参加ください。
 
 ![Untitled](getting_started/26.png)
 
-## 公式イベントのご案内
+### 公式イベントのご案内
 
 VRChat にて隔週日曜日 21:00 よりイベントを開催しています。
 プロジェクトの進捗報告、告知と交流会を行っています。
@@ -331,11 +293,11 @@ VRChat にて隔週日曜日 21:00 よりイベントを開催しています。
 
 ![Untitled](getting_started/27.png)
 
-## 開発者・サポートクリエイター募集
+### 開発者・サポートクリエイター募集
 
 ![Untitled](getting_started/28.png)
 
-## こまったときは
+### こまったときは
 
 <aside>
 💡 EAUploaderの導入、使用中に問題が発生したり、説明にないことが起こって解決できないとき
@@ -353,7 +315,7 @@ VRChat にて隔週日曜日 21:00 よりイベントを開催しています。
 - それぞれの配布元のサポートを受けてください。
 - サポートがない場合は X などで助けを求めてください。
 
-## お問い合わせ
+### お問い合わせ
 
 私人、法人問わず Project EAUploader または運営元の USLOG へのお問い合わせは、以下よりお願いします。
 
@@ -364,9 +326,9 @@ VRChat にて隔週日曜日 21:00 よりイベントを開催しています。
 USLOG (uslog.tech)
 Project EAUploader
 
-# Option
+## Option
 
-## プロジェクトの起動（パッケージ Import）
+### プロジェクトの起動（パッケージ Import）
 
 プロジェクトの管理画面に遷移します。VCC パッケージはここから追加、更新、削除することができます。
 
@@ -377,7 +339,7 @@ Project EAUploader
 ここからは従来のパッケージをインポートして追加する方法での説明です。
 特別な理由がない場合は、これより前にある「[VCC に EAUploader を追加](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)」する方法で EAUploader を導入してください。
 
-## EAUploader を追加
+### EAUploader を追加
 
 Unity が起動したら、ダウンロードした EAUploader のフォルダから Unity パッケージをドラック＆ドロップで追加します。
 

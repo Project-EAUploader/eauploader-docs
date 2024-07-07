@@ -1,107 +1,102 @@
-import { defineConfig } from 'astro/config'
-import starlight from '@astrojs/starlight'
+import { defineConfig } from "astro/config";
+import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
+  base: "/docs",
   integrations: [
     starlight({
-      title: 'EAUploader Docs',
-      disable404Route: true,
-      head: [
-        {
-          tag: 'script',
-          content: `window.addEventListener('load', () => document.querySelector('.site-title').href += 'docs/')`
-        }
-      ],
+      title: "EAUploader Docs",
       editLink: {
         baseUrl:
-          'https://github.com/Project-EAUploader/eauploader.uslog.tech/edit/main/'
+          "https://github.com/Project-EAUploader/eauploader.uslog.tech/edit/main/",
       },
-      defaultLocale: 'ja',
+      defaultLocale: "root",
       locales: {
-        en: {
-          label: 'English'
+        root: {
+          label: "日本語",
+          lang: "ja",
         },
-        ja: {
-          label: '日本語'
-        }
+        en: {
+          label: "English",
+        },
       },
       social: {
-        github: 'https://github.com/Project-EAUploader',
-        discord: 'https://discord.gg/RhUQPghgMQ'
+        github: "https://github.com/Project-EAUploader",
+        discord: "https://discord.gg/RhUQPghgMQ",
       },
       sidebar: [
         {
-          label: 'Guides',
+          label: "Guides",
           translations: {
-            ja: 'ガイド'
+            ja: "ガイド",
           },
           items: [
             {
-              label: 'Introduction',
+              label: "Introduction",
               translations: {
-                ja: 'はじめに'
+                ja: "はじめに",
               },
-              slug: 'docs/guides/introduction'
+              slug: "guides/introduction",
             },
             {
-              label: 'Getting Started',
+              label: "Getting Started",
               translations: {
-                ja: '初めての方向けガイド'
+                ja: "初めての方向けガイド",
               },
-              slug: 'docs/guides/getting_started'
-            }
-          ]
+              slug: "guides/getting_started",
+            },
+          ],
         },
         {
-          label: 'For Developers',
+          label: "For Developers",
           translations: {
-            ja: '開発者向け'
+            ja: "開発者向け",
           },
           items: [
             {
-              label: 'Environment Setup',
+              label: "Environment Setup",
               translations: {
-                ja: '環境構築'
+                ja: "環境構築",
               },
-              slug: 'docs/for_dev/environment'
+              slug: "for_dev/environment",
             },
             {
-              label: 'Construction',
+              label: "Construction",
               translations: {
-                ja: '構造'
+                ja: "構造",
               },
-              slug: 'docs/for_dev/construction'
+              slug: "for_dev/construction",
             },
             {
-              label: 'Editor',
-              slug: 'docs/for_dev/editor'
+              label: "Editor",
+              slug: "for_dev/editor",
             },
             {
-              label: 'Runtime',
-              slug: 'docs/for_dev/runtime'
+              label: "Runtime",
+              slug: "for_dev/runtime",
             },
             {
-              label: 'Extension Development',
+              label: "Extension Development",
               translations: {
-                ja: '拡張機能開発'
+                ja: "拡張機能開発",
               },
-              slug: 'docs/for_dev/extension'
+              slug: "for_dev/extension",
             },
             {
-              label: 'Logging',
+              label: "Logging",
               translations: {
-                ja: 'ログ出力機能仕様書'
+                ja: "ログ出力機能仕様書",
               },
-              slug: 'docs/for_dev/logging'
-            }
-          ]
+              slug: "for_dev/logging",
+            },
+          ],
         },
         {
-          label: 'API Reference',
-          autogenerate: { directory: 'reference' }
-        }
-      ]
-    })
-  ]
-})
+          label: "API Reference",
+          autogenerate: { directory: "reference" },
+        },
+      ],
+    }),
+  ],
+});
