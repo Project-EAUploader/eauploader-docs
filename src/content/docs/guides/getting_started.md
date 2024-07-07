@@ -81,7 +81,7 @@ EAUploader での操作は Unity に変更を行うものです。Unity は通�
 
 ![Untitled](getting_started/2.png)
 
-初めての方は、アカウントを作成するために Sigh In ボタンの下にある$\color{#00B0F0}\textsf{Create account}$をクリックしてください。
+初めての方は、アカウントを作成するために Sigh In ボタンの下にある<span style="color: #00B0F0">Create account</span>をクリックしてください。
 
 ### サインインの完了
 
@@ -89,7 +89,7 @@ EAUploader での操作は Unity に変更を行うものです。Unity は通�
 
 ![Untitled](getting_started/3.png)
 
-サインインが完了したら、$\color{#00b0f0}\textsf{Got it}$をクリックして進めます。
+サインインが完了したら、<span style="color: #00b0f0">Got it</span>をクリックして進めます。
 
 ※Unity Hub のバージョンによって表示が異なる可能性があります
 
@@ -99,7 +99,7 @@ Unity Editor のインストール画面に遷移します。
 
 ![Untitled](getting_started/4.png)
 
-ここでは$\color{#00b0f0}\textsf{Skip installation}$をクリックしてスキップしてください。
+ここでは<span style="color: #00b0f0">Skip installation</span>をクリックしてスキップしてください。
 後のスキップにて、VCC からインストールを行います。
 
 ### ライセンスの認証
@@ -116,13 +116,13 @@ Unity Hub の通常の画面に遷移します。上部にライセンスの認�
 
 ![Untitled](getting_started/6.png)
 
-$\color{#00b0f0}\textsf{Add license}$ボタンをクリックしてください。
+<span style="color: #00b0f0">Add license</span>ボタンをクリックしてください。
 
 個人ライセンス（無料）で認証を進めます。
 
 ![Untitled](getting_started/7.png)
 
-$\color{#00b0f0}\textsf{}$$\color{#00b0f0}\textsf{Get a free personal license}$ボタンをクリックしてください。このライセンスでも Unity の通常のすべての機能を使用できます。
+<span style="color: #00b0f0"></span><span style="color: #00b0f0">Get a free personal license</span>ボタンをクリックしてください。このライセンスでも Unity の通常のすべての機能を使用できます。
 ライセンスは Unity アカウントに対して有効になります。
 
 ※ここではライセンス認証が行えれば問題ないため、他の認証方法で認証しても大丈夫です。
@@ -142,7 +142,7 @@ $\color{#00b0f0}\textsf{}$$\color{#00b0f0}\textsf{Get a free personal license}$�
 
 ![Untitled](getting_started/9.png)
 
-いくつかダウンロードのボタンがあるため注意してください。$\color{#00b0f0}\textsf{Download the Creator Companion}$をクリックしてダウンロードしてください。
+いくつかダウンロードのボタンがあるため注意してください。<span style="color: #00b0f0">Download the Creator Companion</span>をクリックしてダウンロードしてください。
 
 ※これが VCC と呼ばれるソフトです。
 
@@ -156,13 +156,13 @@ $\color{#00b0f0}\textsf{}$$\color{#00b0f0}\textsf{Get a free personal license}$�
 
 ![Untitled](getting_started/11.png)
 
-$\color{#00b0f0}\textsf{Show Me Around}$をクリックしてチュートリアルを開始します。
+<span style="color: #00b0f0">Show Me Around</span>をクリックしてチュートリアルを開始します。
 
 進めると、以下のような画面に遷移します。
 
 ![Untitled](getting_started/12.png)
 
-$\color{#00b0f0}\textsf{Continue}$をクリックして進めてください。
+<span style="color: #00b0f0">Continue</span>をクリックして進めてください。
 
 ### Unity Editor のインストール
 
@@ -170,13 +170,13 @@ $\color{#00b0f0}\textsf{Continue}$をクリックして進めてください。
 
 ![Untitled](getting_started/13.png)
 
-$\color{#00b0f0}\textsf{Continue}$をクリックして進めてください。
+<span style="color: #00b0f0">Continue</span>をクリックして進めてください。
 
 Unity をインストールするように案内が出ます。
 
 ![Untitled](getting_started/14.png)
 
-$\color{#00b0f0}\textsf{Install Unity}$をクリックして進めてください。
+<span style="color: #00b0f0">Install Unity</span>をクリックして進めてください。
 
 ![Untitled](getting_started/15.png)
 
@@ -190,7 +190,7 @@ $\color{#00b0f0}\textsf{Install Unity}$をクリックして進めてくださ�
 
 ![Untitled](getting_started/16.png)
 
-$\color{#00b0f0}\textsf{Continue}$をクリックして進めてください。
+<span style="color: #00b0f0">Continue</span>をクリックして進めてください。
 
 ### Unity 準備完了
 
@@ -198,7 +198,7 @@ Unity と VCC のセットアップが完了しました。
 
 ![Untitled](getting_started/17.png)
 
-続いて、$\color{#00b0f0}\textsf{Create New Project}$から新規プロジェクトを作成します。
+続いて、<span style="color: #00b0f0">Create New Project</span>から新規プロジェクトを作成します。
 
 ### プロジェクトの作成
 
@@ -207,10 +207,10 @@ Unity と VCC のセットアップが完了しました。
 
 ![Untitled](getting_started/18.png)
 
-$\color{#00b0f0}\textsf{Unity 2022 Avatar Project}$を選択してください。Project Name には適当な名前をつけてください。
+<span style="color: #00b0f0">Unity 2022 Avatar Project</span>を選択してください。Project Name には適当な名前をつけてください。
 ただし全角文字は使用しないでください。アップロードできない原因となります。半角英数字と記号のみを使用してください。
 
-入力後$\color{#00b0f0}\textsf{Create Project}$を選択して進みます。
+入力後<span style="color: #00b0f0">Create Project</span>を選択して進みます。
 
 ### EAUploader の追加（VCC に EAUploader を追加）
 
@@ -221,7 +221,7 @@ VCC に EAUploader を追加するため、[ここ](https://eauploader.uslog.tec
 ![Untitled](getting_started/19.png)
 
 自動で VCC にポップアップが表示されます。
-$\color{#00b0f0}\textsf{I Understand, Add Repository}$をクリックして VCC に EAUploader を追加します。
+<span style="color: #00b0f0">I Understand, Add Repository</span>をクリックして VCC に EAUploader を追加します。
 
 Manage Packages の中から Easy Avatar Uploader for EAUploader を探して、⊕ ボタンをクリックして追加します。
 
@@ -229,7 +229,7 @@ Manage Packages の中から Easy Avatar Uploader for EAUploader を探して、
 
 ### プロジェクトの起動
 
-右上の$\color{#00b0f0}\textsf{Open Project}$から起動してください。
+右上の<span style="color: #00b0f0">Open Project</span>から起動してください。
 
 ![Untitled](getting_started/21.png)
 
@@ -334,7 +334,7 @@ Project EAUploader
 
 ![Untitled](getting_started/29.png)
 
-何も変更せず$\color{#00b0f0}\textsf{Open Project}$をクリックしてください。Unity が起動します。
+何も変更せず<span style="color: #00b0f0">Open Project</span>をクリックしてください。Unity が起動します。
 
 ここからは従来のパッケージをインポートして追加する方法での説明です。
 特別な理由がない場合は、これより前にある「[VCC に EAUploader を追加](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)」する方法で EAUploader を導入してください。
