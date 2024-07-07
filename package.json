@@ -10,10 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.7.0",
     "@astrojs/starlight": "^0.25.0",
+    "@fontsource/lexend-deca": "^5.0.13",
+    "@fontsource/noto-sans-jp": "^5.0.19",
     "astro": "^4.10.2",
     "sharp": "^0.32.5",
-    "@astrojs/check": "^0.7.0",
+    "starlight-image-zoom": "^0.6.0",
     "typescript": "^5.5.3"
   }
 }

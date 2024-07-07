@@ -1,14 +1,34 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import starlightImageZoom from "starlight-image-zoom";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://eauploader-docs.uslog.tech",
   integrations: [
     starlight({
+      plugins: [starlightImageZoom()],
       title: "EAUploader Docs",
+      logo: {
+        src: "./public/favicon.svg",
+      },
+      head: [
+        {
+          tag: "link",
+          attrs: {
+            rel: "icon",
+            href: "/favicon.svg",
+          },
+        },
+      ],
+      customCss: [
+        "@fontsource/lexend-deca",
+        "@fontsource/noto-sans-jp",
+        "./src/styles/custom.css",
+      ],
       editLink: {
         baseUrl:
-          "https://github.com/Project-EAUploader/eauploader.uslog.tech/edit/main/",
+          "https://github.com/Project-EAUploader/eauploader-docs/edit/main/",
       },
       defaultLocale: "root",
       locales: {

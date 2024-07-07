@@ -14,12 +14,21 @@ importers:
       '@astrojs/starlight':
         specifier: ^0.25.0
         version: 0.25.0(astro@4.11.5(typescript@5.5.3))
+      '@fontsource/lexend-deca':
+        specifier: ^5.0.13
+        version: 5.0.13
+      '@fontsource/noto-sans-jp':
+        specifier: ^5.0.19
+        version: 5.0.19
       astro:
         specifier: ^4.10.2
         version: 4.11.5(typescript@5.5.3)
       sharp:
         specifier: ^0.32.5
         version: 0.32.6
+      starlight-image-zoom:
+        specifier: ^0.6.0
+        version: 0.6.0(@astrojs/starlight@0.25.0(astro@4.11.5(typescript@5.5.3)))
       typescript:
         specifier: ^5.5.3
         version: 5.5.3
@@ -363,6 +372,12 @@ packages:
 
   '@expressive-code/plugin-text-markers@0.35.3':
     resolution: {integrity: sha512-gDdnQrfDRXw5Y+PKHJDkpAUdf2pthYOthGcgy3JB8GOTQ3EL1h+755Ct/bGc4MR6jn+dgnQP47uHMWQaccvN6Q==}
+
+  '@fontsource/lexend-deca@5.0.13':
+    resolution: {integrity: sha512-5sg2koSbYtL4VH4FMT6q6HOQwgRAAlia0TQvlmglPWVDxYZ6EvUbn6XQKbC1dXPLwDqGf6Zu5IGZjZGPZYs1yw==}
+
+  '@fontsource/noto-sans-jp@5.0.19':
+    resolution: {integrity: sha512-N0KUmSqX6tlAlnqFQnDywj9e+4RithtLgFGlcRt/85EI8rmDYJFYQCZVhc+xTIk5Kgr1gLtNToHZzK61BTsWqw==}
 
   '@img/sharp-darwin-arm64@0.33.4':
     resolution: {integrity: sha512-p0suNqXufJs9t3RqLBO6vvrgr5OhgbWp76s5gTRvdmxmuv9E1rcaqGUsl3l4mKVmXPkTkTErXediAui4x+8PSA==}
@@ -1949,6 +1964,12 @@ packages:
   sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
 
+  starlight-image-zoom@0.6.0:
+    resolution: {integrity: sha512-Qm90E0IMwDwboUdx4Y3Dhu0Ix3b4l0nkrDbFzsjDwCj57tEZp9tFAFSYKpOIF2Wr1bxoNlYfaDqh1hcvYngmMQ==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@astrojs/starlight': '>=0.22.0'
+
   stdin-discarder@0.2.2:
     resolution: {integrity: sha512-UhDfHmA92YAlNnCfhmq0VeNL5bDbiZGg7sZ2IvPsXubGkiNa9EC+tUTsjBRsYUAz87btI6/1wf4XoVvQ3uRnmQ==}
     engines: {node: '>=18'}
@@ -2721,6 +2742,10 @@ snapshots:
   '@expressive-code/plugin-text-markers@0.35.3':
     dependencies:
       '@expressive-code/core': 0.35.3
+
+  '@fontsource/lexend-deca@5.0.13': {}
+
+  '@fontsource/noto-sans-jp@5.0.19': {}
 
   '@img/sharp-darwin-arm64@0.33.4':
     optionalDependencies:
@@ -4846,6 +4871,13 @@ snapshots:
   space-separated-tokens@2.0.2: {}
 
   sprintf-js@1.0.3: {}
+
+  starlight-image-zoom@0.6.0(@astrojs/starlight@0.25.0(astro@4.11.5(typescript@5.5.3))):
+    dependencies:
+      '@astrojs/starlight': 0.25.0(astro@4.11.5(typescript@5.5.3))
+      rehype-raw: 7.0.0
+      unist-util-visit: 5.0.0
+      unist-util-visit-parents: 6.0.1
 
   stdin-discarder@0.2.2: {}
 
