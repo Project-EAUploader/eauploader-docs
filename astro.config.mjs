@@ -39,6 +39,14 @@ export default defineConfig({
         en: {
           label: "English",
         },
+        "zh-cn": {
+          label: "简体中文",
+          lang: "zh-CN",
+        },
+        ko: {
+          label: "한국어",
+          lang: "ko",
+        },
       },
       social: {
         github: "https://github.com/Project-EAUploader",
