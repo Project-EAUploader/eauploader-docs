@@ -5,7 +5,7 @@ description: 本指南由Avatar Store制作，Project EAUploader制作。
 
 本指南由Avatar Store制作，Project EAUploader制作。
 
-![Official Character Ia Design Ebihana](../../../assets/ea.png)
+![Official Character Ia Design Ebihana](../../../../assets/ea.png)
 
 官方角色 Ia 设计 Ebihana
 
