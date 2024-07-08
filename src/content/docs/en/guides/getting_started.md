@@ -1,398 +1,348 @@
 ---
-title: 初めての方向けガイド
-description: このガイドはアバター販売ショップが制作したものでなく、Project EAUploader が制作したものです。
+title: Getting Started Guide for Beginners
+description: This guide is created by Project EAUploader, not by the Avatar Shop.
 ---
 
-# 初めての方向けガイド
+This guide is created by Project EAUploader, not by the Avatar Shop.
 
-このガイドはアバター販売ショップが制作したものでなく、Project EAUploader が制作したものです。
+![Official Character Ia Design Ebigohan](../../../assets/ea.png)
 
-![公式キャラクター　いあ　デザイン　えびごはん](../../../../assets/ea.png)
+Official Character Ia Design Ebigohan
 
-公式キャラクター　いあ　デザイン　えびごはん
+## Notes and Disclaimers
 
-# 目次
+EAUploader is an open-source software tool developed and provided by Project EAUploader (uslog.tech). It is not a commercial product.
+Project EAUploader (uslog.tech) is not responsible for any damages caused by the use of EAUploader.
 
-- [**注意事項・免責事項**](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-- [**導入の方法**](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  1. [導入内容の説明](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  2. [こまったときは](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  3. [導入の方法](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     1. [Unity Hub のダウンロード](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     2. [Unity Hub を起動](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     3. [サインインの完了](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     4. [Install Unity Editor をスキップ](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     5. [ライセンスの認証](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     6. [ライセンスの追加](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     7. [Creator Companion をインストール](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     8. [VCC を起動](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     9. [Unity Editor のインストール](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     10. [Unity インストール完了](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     11. [Unity 準備完了](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     12. [プロジェクトの作成](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     13. [EAUploader の追加（VCC に EAUploader を追加）](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     14. [プロジェクトの起動](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-     15. [導入・起動完了](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-- [**導入後**](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  1. [ツール内のガイド](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  2. [バックアップのとり方](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-- [**ご案内**](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  1. [公式コミュニティのご案内](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  2. [公式イベントのご案内](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  3. [開発者・サポートクリエイター募集](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  4. [こまったときは](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  5. [お問い合わせ](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-- [**Option**](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  1. [プロジェクトの起動（パッケージ Import）](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
-  2. [EAUploader を追加](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)
+Unity has various bugs. Occasionally, unexpected and unsolvable bugs or crashes may occur. In the worst case, the project may become unlaunchable (project corruption).
+Please make sure to back up your project (refer to the section "How to Back Up After Installation" on this page).
+Also, please save important data such as avatar data outside of the project.
 
-# 注意事項・免責事項
+## Explanation of Installation Content
 
-EAUploader は OSS(オープンソースソフトウェア)として開発、提供しているツールです。これは製品ではありません。
-EAUploader を使用して発生したあらゆる損害について、Project EAUplaoder(uslog.tech)はいかなる責任も負いません。
+### Software to Install
 
-Unity は様々なバグを抱えています。希に、予測されていない、解決できないバグやクラッシュが発生することがあります。最悪、プロジェクトが起動できなくなります(プロジェクトが壊れる)。
-プロジェクトはバックアップをとるようにしてください([本ページ 導入後 バックアップのとり方 を参照](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21))。
-また、アバターのデータなど大切なデータはプロジェクト外にも保存するようにしてください。
+**- Unity Hub**
+- Software for managing Unity.
+- Unity has multiple versions, each being an independent software. Unity Hub is used to manage and authenticate Unity licenses.
 
-# 導入の方法
+**- Unity Editor**
+- The main Unity software. However, in this guide, we will use Creator Companion for automatic installation.
 
-## 導入内容の説明
+**- Creator Companion**
+- Unity project management software distributed by VRChat.
+- Commonly referred to as VCC.
 
-**導入するソフトウェア**
+**Packages to Install (Additional Features/Tools to Install in Unity)**
 
-**・Unity Hub**
-― Unity を管理するためのソフトです。
-（Unity は多数のバージョンがあり、それぞれ独立したソフトウェアのため、Unity をまとめて管理、ライセンス認証を通すソフトが Unity Hub です）
+**- VRCSDK**
+- A package provided by VRChat for creating, editing, and uploading avatars and worlds.
+- Automatically added to projects created with VCC.
 
-**・Unity Editor**
-― Unity 本体です。ただし、このガイドでは以下の Creator Companion を使用
-　 して自動でインストールします。
+**- EAUploader**
+- The main EAUploader software. It runs on Unity.
 
-**・Creator Companion**
-― VRChat が配布している Unity プロジェクト管理ソフトです。
-　 一般に、VCC と呼ばれています。
+Operations in EAUploader modify Unity. Unity normally maintains the working state, so it does not perform save operations when exiting.
+Uploading avatars with EAUploader uses the functionality of VRCSDK, so it is the same as uploading with VRCSDK.
 
-**導入するパッケージ（Unity に導入する追加の機能・ツール）**
-
-**・VRCSDK**
-― VRChat が配布しているアバターやワールドを作成、編集、アップロードする
-　 ためのパッケージです。VCC で作成したプロジェクトには自動で追加されています。
-
-**・EAUploader**
-― EAUploader 本体です。Unity 上で動作します。
-
-EAUploader での操作は Unity に変更を行うものです。Unity は通常作業状態
-　 を保持するため、終了時に保存する操作は行いません。
-　 EAUploader でのアバターのアップロードは、VRCSDK の機能を使用するも
-　 のであり、VRCSDK を用いたアップロードと同じです。
-
-## こまったときは
+### When You're Stuck
 
 <aside>
-💡 EAUploaderの導入、使用中に問題が発生したり、説明にないことが起こって解決できないとき
+💡 If you encounter problems during the installation or use of EAUploader, or if something unexpected happens that you can't resolve based on the instructions:
 </aside>
 
-- EAUploader 公式 Discord サーバーにご参加ください。 ▷ [https://discord.gg/yYFru7brra](https://discord.gg/yYFru7brra)
-- URL が使用できない場合は公式サイトをご確認ください。 ▷ [https://eauploader.uslog.tech](https://eauploader.uslog.tech/)
+- Please join the official EAUploader Discord server. ▷ [https://discord.gg/yYFru7brra](https://discord.gg/yYFru7brra)
+- If you can't use the URL, please check the official website. ▷ [https://eauploader.uslog.tech](https://eauploader.uslog.tech/)
 
 <aside>
-💡 UnityやVRCSDKの問題、購入したアバターやギミック、ツールに関する問題が発生したとき
+💡 If you encounter problems with Unity or VRCSDK, or have issues with purchased avatars, gimmicks, or tools:
 </aside>
 
-- それぞれの配布元のサポートを受けてください。
-- サポートがない場合は X などで助けを求めてください。
+- Please seek support from the respective distributors.
+- If there is no support available, seek help from other sources.
 
-## 導入の方法
+## Installation Instructions
 
-### Unity Hub のダウンロード
+### Download Unity Hub
 
-以下のリンクから、UnityHub をダウンロードします。
+Download UnityHub from the following link:
 [https://unity.com/ja/download](https://unity.com/ja/download)
 
 ![Untitled](getting_started/1.png)
 
-### Unity Hub を起動
+### Launch Unity Hub
 
-ダウンロードしたファイル UnityHubSetup.exe を実行してください。
-起動後、以下のようにサインインを求められます。
+Run the downloaded file UnityHubSetup.exe.
+After launching, you will be prompted to sign in as shown below.
 
 ![Untitled](getting_started/2.png)
 
-初めての方は、アカウントを作成するために Sigh In ボタンの下にある$\color{#00B0F0}\textsf{Create account}$をクリックしてください。
+If you are a first-time user, click "Create account" below the Sign In button to create an account.
 
-### サインインの完了
+### Complete Sign In
 
-画面に従ってアカウントを作成し、サインインまで行ってください。
+Follow the on-screen instructions to create an account and complete the sign-in process.
 
 ![Untitled](getting_started/3.png)
 
-サインインが完了したら、$\color{#00b0f0}\textsf{Got it}$をクリックして進めます。
+After signing in, click "Got it" to proceed.
 
-※Unity Hub のバージョンによって表示が異なる可能性があります
+*The display may vary depending on the version of Unity Hub.
 
-### Install Unity Editor をスキップ
+### Skip Install Unity Editor
 
-Unity Editor のインストール画面に遷移します。
+You will be taken to the Unity Editor installation screen.
 
 ![Untitled](getting_started/4.png)
 
-ここでは$\color{#00b0f0}\textsf{Skip installation}$をクリックしてスキップしてください。
-後のスキップにて、VCC からインストールを行います。
+Click "Skip installation" to skip the installation.
+The installation will be done later through VCC.
 
-### ライセンスの認証
+### License Authentication
 
-Unity Hub の通常の画面に遷移します。上部にライセンスの認証を求めるメッセージが表示されます。
+You will be taken to the regular Unity Hub screen. A message requesting license authentication will be displayed at the top.
 
 ![Untitled](getting_started/5.png)
 
-右上のボタンからライセンスの認証画面に移ります。
+Click the button in the upper right corner to go to the license authentication screen.
 
-### ライセンスの追加
+### Add License
 
-ライセンスの管理画面に遷移します。ライセンスの一覧に何も表示されていないことを確認します。
+You will be taken to the license management screen. Make sure that no licenses are displayed in the list.
 
 ![Untitled](getting_started/6.png)
 
-$\color{#00b0f0}\textsf{Add license}$ボタンをクリックしてください。
+Click the "Add license" button.
 
-個人ライセンス（無料）で認証を進めます。
+Proceed with authentication using the personal license (free).
 
 ![Untitled](getting_started/7.png)
 
-$\color{#00b0f0}\textsf{}$$\color{#00b0f0}\textsf{Get a free personal license}$ボタンをクリックしてください。このライセンスでも Unity の通常のすべての機能を使用できます。
-ライセンスは Unity アカウントに対して有効になります。
+Click the "Get a free personal license" button. This license allows you to use all the regular features of Unity.
+The license is valid for your Unity account.
 
-※ここではライセンス認証が行えれば問題ないため、他の認証方法で認証しても大丈夫です。
+*As long as the license authentication is successful, you can use other authentication methods.
 
-同意してライセンスを取得します。
+Agree and obtain the license.
 
 ![Untitled](getting_started/8.png)
 
-これは Unity に対する同意です。内容を確認の上、同意をしてください。
+This is an agreement with Unity. Please review the content and agree to it.
 
-ライセンスを追加したら Unity Hub での操作は完了です。
+Once you have added the license, the operations in Unity Hub are complete.
 
-### Creator Companion をインストール
+### Install Creator Companion
 
-下記 URL より VRChat 公式が配布しているプロジェクト管理ソフトウェアをダウンロードしてください。
+Download the project management software distributed by VRChat from the following URL:
 [https://vrchat.com/home/download](https://vrchat.com/home/download)
 
 ![Untitled](getting_started/9.png)
 
-いくつかダウンロードのボタンがあるため注意してください。$\color{#00b0f0}\textsf{Download the Creator Companion}$をクリックしてダウンロードしてください。
+Be careful as there are several download buttons. Click "Download the Creator Companion" to download.
 
-※これが VCC と呼ばれるソフトです。
+*This is the software called VCC.
 
-ダウンロードしたファイルを実行し、インストールを進めてください。
+Run the downloaded file and proceed with the installation.
 
 ![Untitled](getting_started/10.png)
 
-### VCC を起動
+### Launch VCC
 
-インストールが完了したら、起動してください。案内が始まります。
+After the installation is complete, launch VCC. The tutorial will begin.
 
 ![Untitled](getting_started/11.png)
 
-$\color{#00b0f0}\textsf{Show Me Around}$をクリックしてチュートリアルを開始します。
+Click "Show Me Around" to start the tutorial.
 
-進めると、以下のような画面に遷移します。
+As you progress, you will be taken to the following screen.
 
 ![Untitled](getting_started/12.png)
 
-$\color{#00b0f0}\textsf{Continue}$をクリックして進めてください。
+Click "Continue" to proceed.
 
-### Unity Editor のインストール
+### Install Unity Editor
 
-少しのロード時間の後、Unity Editor が見つからないというログが発生します。
+After a short loading time, a log will appear stating that Unity Editor was not found.
 
 ![Untitled](getting_started/13.png)
 
-$\color{#00b0f0}\textsf{Continue}$をクリックして進めてください。
+Click "Continue" to proceed.
 
-Unity をインストールするように案内が出ます。
+You will be prompted to install Unity.
 
 ![Untitled](getting_started/14.png)
 
-$\color{#00b0f0}\textsf{Install Unity}$をクリックして進めてください。
+Click "Install Unity" to proceed.
 
 ![Untitled](getting_started/15.png)
 
-公式が推奨する最新バージョンの Unity のインストールの画面となります。Install ボタンをクリックしてインストールしてください。
+This is the installation screen for the latest version of Unity recommended by the official website. Click the "Install" button to install.
 
-※Unity のインストールは少し時間がかかります
+*Unity installation may take some time.
 
-### Unity インストール完了
+### Unity Installation Complete
 
-インストールが完了すると、画面が遷移します。
+After the installation is complete, the screen will transition.
 
 ![Untitled](getting_started/16.png)
 
-$\color{#00b0f0}\textsf{Continue}$をクリックして進めてください。
+Click "Continue" to proceed.
 
-### Unity 準備完了
+### Unity Ready
 
-Unity と VCC のセットアップが完了しました。
+Unity and VCC setup are complete.
 
 ![Untitled](getting_started/17.png)
 
-続いて、$\color{#00b0f0}\textsf{Create New Project}$から新規プロジェクトを作成します。
+Next, create a new project by clicking "Create New Project".
 
-### プロジェクトの作成
+### Creating a Project
 
-プロジェクトは大きく４種類に分かれます。
-アバターとワールド用のプロジェクトが Unity2019 と 2022 用でそれぞれ２種ずつ４種類あります。
+Projects are divided into four main types.
+There are two types each for avatars and worlds, for Unity 2019 and 2022.
 
 ![Untitled](getting_started/18.png)
 
-$\color{#00b0f0}\textsf{Unity 2022 Avatar Project}$を選択してください。Project Name には適当な名前をつけてください。
-ただし全角文字は使用しないでください。アップロードできない原因となります。半角英数字と記号のみを使用してください。
+Select "Unity 2022 Avatar Project". Enter a suitable name for the Project Name.
+However, do not use full-width characters. It may cause upload issues. Please use only half-width alphanumeric characters and symbols.
 
-入力後$\color{#00b0f0}\textsf{Create Project}$を選択して進みます。
+After entering the name, click "Create Project" to proceed.
 
-### EAUploader の追加（VCC に EAUploader を追加）
+### Adding EAUploader (Adding EAUploader to VCC)
 
-プロジェクトの管理画面に遷移します。VCC パッケージはここから追加、更新、削除することができます。
+You will be taken to the project management screen. VCC packages can be added, updated, or removed from here.
 
-VCC に EAUploader を追加するため、[ここ](https://eauploader.uslog.tech/)をクリックしてください。
+To add EAUploader to VCC, click [here](https://eauploader.uslog.tech/).
 
 ![Untitled](getting_started/19.png)
 
-自動で VCC にポップアップが表示されます。
-$\color{#00b0f0}\textsf{I Understand, Add Repository}$をクリックして VCC に EAUploader を追加します。
+A popup will automatically appear in VCC.
+Click "I Understand, Add Repository" to add EAUploader to VCC.
 
-Manage Packages の中から Easy Avatar Uploader for EAUploader を探して、⊕ ボタンをクリックして追加します。
+Search for "Easy Avatar Uploader for EAUploader" in the Manage Packages section and click the ⊕ button to add it.
 
 ![Untitled](getting_started/20.png)
 
-### プロジェクトの起動
+### Launching the Project
 
-右上の$\color{#00b0f0}\textsf{Open Project}$から起動してください。
+Click "Open Project" in the upper right corner to launch the project.
 
 ![Untitled](getting_started/21.png)
 
-### 導入・起動完了
+### Installation and Launch Complete
 
-これでアバターをアップロードする準備が整いました。
+You are now ready to upload avatars.
 
 ![Untitled](getting_started/22.png)
 
-VRM アバターを使用したい場合は別ガイド「VRM を使用する」を参照してください。
+If you want to use VRM avatars, please refer to the separate guide "Using VRM".
 
-プロジェクトでは EAUploader を閉じて、通常の Unity エディタとしてアバターの改変を行うことも可能です。
+In the project, you can also modify avatars as a regular Unity editor by closing EAUploader.
 
-左下は終了ボタンです。EAUplaoder を閉じる場合は右上の ✕ から閉じてください。
+The bottom left button is for exiting. If you want to close EAUploader, click the ✕ in the upper right corner.
 
-# 導入後
+## After Installation
 
-## ツール内のガイド
+### Guide within the Tool
 
-EAUploader はツール内にガイドがあります。
+EAUploader has a guide within the tool.
 
 ![Untitled](getting_started/23.png)
 
-ツールの使い方やシェーダー、プラグイン、アップロードの説明など、ツールやアバター、作業に関する説明はツール内のガイドをお読みください。
+Please read the guide within the tool for instructions on how to use the tool, shaders, plugins, and uploading, as well as information about the tool, avatars, and tasks.
 
-## バックアップの取り方
+### How to Back Up After Installation
 
-VCC のプロジェクト一覧にて、バックアップをとりたいプロジェクトの一番右の…をクリックしてください。
+In the VCC project list, click the ... on the right side of the project for which you want to back up.
 
 ![Untitled](getting_started/24.png)
 
-バックアップの保存場所は VCC の左下 Settings より、Backups にて確認できます。また、ここで変更できます。
+You can check the backup storage location in Settings at the bottom left of VCC. You can also change it here.
 
 ![Untitled](getting_started/25.png)
 
-# ご案内
+## Information
 
-## 公式コミュニティのご案内
+### Official Community Information
 
-EAUploader の公式 Discord サーバーへ是非ご参加ください。
-アップデートや、プロジェクトの最新情報を告知しています。
+Please join the official EAUploader Discord server.
+Updates and the latest information about the project are announced there.
 
-また、EAUploader へのご意見、ご提案も可能です。
+You can also provide feedback and suggestions for EAUploader.
 
-是非、ご参加いただきたく思います。
+We highly recommend joining.
 [https://discord.gg/yYFru7brra](https://discord.gg/yYFru7brra)
 
 ![Untitled](getting_started/26.png)
 
-## 公式イベントのご案内
+### Official Event Information
 
-VRChat にて隔週日曜日 21:00 よりイベントを開催しています。
-プロジェクトの進捗報告、告知と交流会を行っています。
+We hold events every other Sunday at 21:00 in VRChat.
+We provide progress reports, announcements, and networking opportunities.
 
-是非ご参加ください。
+Please join us.
 
-開発者も通常参加しています。
+Developers also participate regularly.
 
-▽ VRChat グループに参加
+▽ Join the VRChat group
 [https://vrc.group/EAUP.0512](https://vrc.group/EAUP.0512)
 
 ![Untitled](getting_started/27.png)
 
-## 開発者・サポートクリエイター募集
+### Developer and Support Creator Recruitment
 
 ![Untitled](getting_started/28.png)
 
-## こまったときは
+### When You're Stuck
 
 <aside>
-💡 EAUploaderの導入、使用中に問題が発生したり、説明にないことが起こって解決できないとき
-
+💡 If you encounter problems during the installation or use of EAUploader, or if something unexpected happens that you can't resolve based on the instructions:
 </aside>
 
-- EAUploader 公式 Discord サーバーにご参加ください。 ▷ [https://discord.gg/yYFru7brra](https://discord.gg/yYFru7brra)
-- URL が使用できない場合は公式サイトをご確認ください。 ▷ [https://eauploader.uslog.tech](https://eauploader.uslog.tech/)
+- Please join the official EAUploader Discord server. ▷ [https://discord.gg/yYFru7brra](https://discord.gg/yYFru7brra)
+- If you can't use the URL, please check the official website. ▷ [https://eauploader.uslog.tech](https://eauploader.uslog.tech/)
 
 <aside>
-💡 UnityやVRCSDKの問題、購入したアバターやギミック、ツールに関する問題が発生したとき
-
+💡 If you encounter problems with Unity or VRCSDK, or have issues with purchased avatars, gimmicks, or tools:
 </aside>
 
-- それぞれの配布元のサポートを受けてください。
-- サポートがない場合は X などで助けを求めてください。
+- Please seek support from the respective distributors.
+- If there is no support available, seek help from other sources.
 
-## お問い合わせ
+### Contact
 
-私人、法人問わず Project EAUploader または運営元の USLOG へのお問い合わせは、以下よりお願いします。
+For inquiries to Project EAUploader or USLOG (uslog.tech), whether as an individual or a corporation, please use the following link:
 
 [https://uslog.tech/contact](https://uslog.tech/contact)
 
-初めての方向けガイド　 v1.0
-2024 年 5 月 15 日
+Getting Started Guide for Beginners v1.0
+May 15, 2024
 USLOG (uslog.tech)
 Project EAUploader
 
-# Option
+## Option
 
-## プロジェクトの起動（パッケージ Import）
+### Launching the Project (Package Import)
 
-プロジェクトの管理画面に遷移します。VCC パッケージはここから追加、更新、削除することができます。
+You will be taken to the project management screen. VCC packages can be added, updated, or removed from here.
 
 ![Untitled](getting_started/29.png)
 
-何も変更せず$\color{#00b0f0}\textsf{Open Project}$をクリックしてください。Unity が起動します。
-
-ここからは従来のパッケージをインポートして追加する方法での説明です。
-特別な理由がない場合は、これより前にある「[VCC に EAUploader を追加](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)」する方法で EAUploader を導入してください。
-
-## EAUploader を追加
-
-Unity が起動したら、ダウンロードした EAUploader のフォルダから Unity パッケージをドラック＆ドロップで追加します。
+Without making any changes, click "Open Project" to launch Unity.
 
 ![Untitled](getting_started/30.png)
 
-デフォルトの Unity の画面です。赤枠の中にファイルをドラックしてください。
+This is the default Unity screen. Drag and drop the file into the red box.
 
 ![Untitled](getting_started/31.png)
 
-インポート画面が表示されます。Import を押してインポートします。
+The import screen will appear. Click "Import" to import.
 
 ![Untitled](getting_started/32.png)
 
-インポート後、しばらくすると EAUploader が自動でプロジェクトに追加され、起動します。
+After the import, EAUploader will be automatically added to the project and launched.
 
-このパッケージは EAUploader を VCC に追加するものです。インポート後、VCC には Easy Avatar Uploader for VRChat が追加されています。
+This package is for adding EAUploader to VCC. After importing, "Easy Avatar Uploader for VRChat" will be added to VCC.
 
-２つ目以降のプロジェクトは、VCC で EAUploader を追加してください。
+For the second and subsequent projects, please add EAUploader to VCC.
+
