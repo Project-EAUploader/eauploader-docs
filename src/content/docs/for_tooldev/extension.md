@@ -1,28 +1,28 @@
 ---
-title: '拡張機能開発'
-description: 'EAUploaderの拡張機能開発について'
+title: 'クイックスタートガイダンス'
+description: 'EAUploaderに対応した拡張機能を制作する方法'
 ---
 
 # EAUplaoder拡張機能開発クイックスタートガイダンス
 
 本文書では、EAUplaoderの拡張機能を開発する方法を解説します。
-実装の詳細につきましては、EAUploaderにデフォルトで搭載されている拡張機能である「ビューポイント位置エディタ」をご覧ください。
-Packages/tech.uslog.eauploader/Editor/Resources/UI/TabContetns/SetUp/Editor/ViewpointPositionEditor配下に実装のコードが存在します。
+実装の詳細については、EAUploaderにデフォルトで搭載されている拡張機能である「ビューポイント位置エディタ」をご覧ください。
+`Packages/tech.uslog.eauploader/Editor/Resources/UI/TabContetns/SetUp/Editor/ViewpointPositionEditor`配下に実装のコードが存在します。
 
-本ドキュメントは、EAUplaoderv1.2.0の内容に準拠しています。
+本ドキュメントは、EAUplaoderv1.4.0の内容に準拠しています。
 
-## 手順1:パッケージをつくるためのフォルダを作成する
-
+## 1. パッケージをつくるためのフォルダを作成する
+* * *
 以降の手順で作成する、ソースコード等を格納するフォルダを作成します。
 
 プロジェクトのAssets内またはPackages直下に作成します。
 名前は任意の名前で構いません。
 
-## 手順2:ソースコードを追加する
-
+## 2. ソースコードを追加する
+* * *
 ### サンプルソース
 
-手順1で追加したフォルダに次のようなソースコードを追加します。
+1で追加したフォルダに次のようなソースコードを追加します。
 以下、このサンプルソースをベースとして、拡張機能を開発するときに書くべきコードについて解説します。
 ※ViewpointPositionEditor.csから解説に必要な部分のソースコードを抜粋したものであるため、このままコピー＆ペーストしても動作しません。
 あくまで参考用としてご覧ください。
@@ -119,7 +119,7 @@ namespace EAUploader.UI.Setup
 
 ```
 
-### 手順2-A:拡張機能をEAUploader側に認識させる
+### 拡張機能をEAUploader側に認識させる
 
 拡張機能をEAUploader側に認識させるために、下記のコードを書く必要があります。
 ※LanguageUtility.T7eFromJsonFileの役割については、後ほど詳細に解説します。
@@ -164,12 +164,12 @@ namespace EAUploader.UI.Setup
 ```
 
 1. 任意のメソッドにEAUPlugin属性を付与する。
-   1. 本サンプルコードでは、Initializeメソッドに対しEAUPlugin属性を付与しています。この属性を付与したメソッドは、EAUploader起動時に自動的に呼び出されます。
+   - 本サンプルコードでは、Initializeメソッドに対しEAUPlugin属性を付与しています。この属性を付与したメソッドは、EAUploader起動時に自動的に呼び出されます。
 2. 前手順で属性を付与したメソッド内でエディタ登録情報を生成しそれを引数として、EAUploaderEditorManager.RegisterEditorメソッドを呼び出す。
-   1. EAUploaderEditorManager.RegisterEditorを呼び出すことで、EAUploader側に拡張機能が追加されます。
-   2. エディタ登録情報の詳細は上記ソースコードのコメントをご覧ください。
+   - EAUploaderEditorManager.RegisterEditorを呼び出すことで、EAUploader側に拡張機能が追加されます。
+   - エディタ登録情報の詳細は上記ソースコードのコメントをご覧ください。
 
-### 手順2-B:EAUploader側から呼び出すメソッドを実装する
+### EAUploader側から呼び出すメソッドを実装する
 
 下記のようにMenuItem属性を任意のメソッドに指定します。
 ユーザーが拡張エディタの起動ボタンを押した際、呼び出されるメソッドとなります。
@@ -186,15 +186,15 @@ namespace EAUploader.UI.Setup
 
 ```
 
-手順2-A,手順2-Bの手順を踏むことで、EAUploaderの画面に拡張機能起動ボタンが表示されるようになります。
+以上の手順を踏むことで、EAUploaderの画面に拡張機能起動ボタンが表示されるようになります。
 
-### 手順2-C:他必要に応じてCreateGUI,OnEnableメソッド等を実装する
+### 他必要に応じてCreateGUI,OnEnableメソッド等を実装する
 
 必要に応じてCreateGUIメソッドやOnEnableメソッドを実装してください。
 
-## 手順3:アセンブリの作成
-
-手順1で作成したフォルダを右クリックし、「Create - Assembly Deffinition」をクリックしてください。
+## 3. アセンブリの作成
+* * *
+1で作成したフォルダを右クリックし、「Create - Assembly Deffinition」をクリックしてください。
 フォルダ内に.asmdefファイルが作成されます。
 
 作成した.asmdefファイルに対し、次の設定を行ってください。
@@ -203,12 +203,12 @@ namespace EAUploader.UI.Setup
 2. Assembly Definition ReferencesにEAUploader.Editorを追加する
 3. ソースコードが置かれている場所によって、Platformを設定する。
 4. Version Definesを追加する。設定値は下記である。Define、Expressionの値は、適宜変更して適用すること。
-   1. Resource:tech.uslog.eauploader
-   2. Define:EAUploader
-   3. Expression:1.2.0
+   * Resource:tech.uslog.eauploader
+   * Define:EAUploader
+   * Expression:1.4.0
 
 上記手順3によって、条件付きコンパイルを行えるようになります。
-例えば、次のように記述することで、Ver1.2.0以上のEAUploaderが存在する場合にのみ、コードを有効にするといった動作が可能になります。
+例えば、次のように記述することで、Ver1.4.0以上のEAUploaderが存在する場合にのみ、コードを有効にするといった動作が可能になります。
 
 ```csharp
 #if EAUploader
@@ -217,7 +217,7 @@ namespace EAUploader.UI.Setup
 ```
 
 ## EAUploaderAPI簡易リファレンス
-
+* * *
 ### 多言語対応
 
 EAUploaderでは、英語の文字列と、任意の言語文字列の対応が記述されたJSONファイルを作成し、そのJSONファイルを適当なタイミングで読み込むことによって、多言語対応を実現しています。任意の言語文字列は、すべて英語をキーとして取得できます。

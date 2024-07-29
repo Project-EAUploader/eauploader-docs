@@ -2,12 +2,12 @@
 title: 'ディレクトリとnamespaceの構造'
 description: 'EAUploaderのディレクトリとnamespaceの構造について'
 ---
-
+# 開発に興味がありますか？
+Project EAUploaderでは開発メンバーを常に募集しています！！
+話を聞くだけでもOK！
+是非当プロジェクトのDiscordサーバーへお越しください。
+[参加はこちら](https://discord.gg/yYFru7brra)
+* * *
+* * *
 ## クラス図
-
-TODO:後でクラス図のまとまりごとに、クラスの説明を書く。
-メソッドの詳細な説明は、publicのやつだけとし、privateのやつとかは、ドキュメントコメントによって詳細に記述することにする。※ドキュメントのメンテナンス負荷を減らすため。
-
-※画像はダウンロード推奨。
-
-![ClassDiagram1.png](ClassDiagram1.png)
+メンテナンス中

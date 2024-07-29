@@ -333,5 +333,3 @@ It will return the string representing the currently set language.
 ### UI Related
 
 EAUploader has custom UI components implemented in Editor/Resources/UI/Components.
-
-s

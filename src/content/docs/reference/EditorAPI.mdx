@@ -1,0 +1,45 @@
+---
+title: 'EAUploader.Editor.API'
+description: 'EAUploader.Editor.API namespace'
+---
+
+
+| Class           | Description |
+| --------------- | ----------- |
+| CoreAPI | EAUploaderの全体に関わる公開APIを提供するクラス |
+| LanguageAPI | 言語関連の公開APIを提供するクラス |
+| UploadAPI | アップロード関連の公開APIを提供するクラス |
+
+# CoreAPI
+* * *
+| Method | Type | Description |
+| ------ | ---- | ----------- |
+| SelectedPrefabPath | String | 現在選択されているプレファブのパスを取得または設定 | 
+| SelectedPrefabPathChanged | Event | 選択されているプレファブのパスが変更されたときに発生するイベント |
+| HasVRM | Bool | EAUploaderでVRMが利用可能か示す値を取得 |
+| HasAvatarOptimizer | Bool | Avatar Optimizer パッケージが利用可能か示す値を取得 |
+| GetVersion | String | EAUploaderの現在のバージョンを取得します |
+| Reload | Void | EAUploaderを再読み込み（Initizalize）します |
+
+# LanguageAPI
+* * *
+| Method | Type | Description |
+| ------ | ---- | ----------- |
+| GetCurrentLanguage | String | 現在の言語コードを取得 |
+| Localize | Void | 指定したVisualElementとその子要素のテキストをローカライズ |
+| LocalizeFromJsonFile | Void | 指定したJSONファイルを使用して、指定したVisualElementとその子要素のテキストをローカライズ |
+| GetLocalizedTextFromJsonFile | String | 指定したキーに対応するローカライズされたテキストを、指定したJSONファイルから取得 |
+| ChangeLanguage | Void | アプリケーションの言語を変更 |
+| GetAvailableLanguages | List | 利用可能な言語のリストを取得 |
+
+# UploadAPI
+* * *
+| Method | Type | Description |
+| ------ | ---- | ----------- |
+| OnUploadComplete | Event | アップロードが完了したときに発生するイベント |
+| UploadProgressChanged | Event | アップロードの進行状況が変更されたときに発生するイベント |
+| BuildAndTestAsync | Task | 指定したプレハブをビルドしてテストする非同期タスクを実行 |
+| GetVRCAvatar | Task | 指定したプレハブのVRCAvatar情報を取得 |
+| UploadAvatarAsync | Task | 指定したプレハブをアバターとしてアップロードする非同期タスクを実行 |
+| UpdateVRCAvatar | Task | 指定したプレハブのVRCAvatar情報を更新する非同期タスクを実行 |
+
