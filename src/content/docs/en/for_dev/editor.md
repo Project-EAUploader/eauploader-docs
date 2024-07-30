@@ -2,6 +2,13 @@
 title: 'Editor'
 description: 'About the EAUploader editor'
 ---
-
-Explanation of each file in the Editor folder
+# Interested in Development?
+Project EAUploader is always looking for development members!
+Even if you just want to talk to us!
+Please visit our project's Discord server.
+[Join here](https://discord.gg/yYFru7brra)
+* * *
+* * *
+## Class Diagram
+Under Maintenance
 

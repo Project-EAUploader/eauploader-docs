@@ -2,8 +2,17 @@
 title: '環境構築'
 description: 'EAUploaderの開発環境を構築する方法'
 ---
-
-下記の方法で、環境開発を構築できる。
+# 開発に興味がありますか？
+Project EAUploaderでは開発メンバーを常に募集しています！！
+話を聞くだけでもOK！
+是非当プロジェクトのDiscordサーバーへお越しください。
+[参加はこちら](https://discord.gg/yYFru7brra)
+* * *
+* * *
+このページ・カテゴリは「EAUploader」の開発に関するドキュメントです。
+EAUploaderに対応したツールの制作についてのリファレンスは「ツール製作者向け」カテゴリをご確認ください。
+* * *
+下記の方法で、環境開発を構築できます。
 
 1. VCC（VRChat Creator Companion）において空のAvaterプロジェクトを作成する
    1. 注意！：既に一般ユーザー向けの方法でEAUploaderをVCCに導入している場合、Manage PackagesにおいてEasy Avater Uploader for VRChatが\***\*Not Installed\*\***になっていることを確認してください。
@@ -14,4 +23,4 @@ description: 'EAUploaderの開発環境を構築する方法'
    2. 注意！：ドットを忘れないでください。ドットを忘れると、`tech.uslog.eauploader`フォルダの配下にさらにフォルダが作成され、EAUploaderが正常に動作しなくなります。
    3. Unityプロジェクトを再起動し、自動的にEAUploaderのウィンドウが表示されれば、開発環境は構築できています。
 
-Unity拡張開発において、特別なビルド手順は必要ありません。ソースコードを変更すると、Unity側で自動的にビルドが行われます。
+Unity拡張開発において、特別なビルド手順は必要ありません。ソースコードを変更すると、Unity側で自動的にビルドが行われます。Unityエディタ拡張の世界へようこそ！

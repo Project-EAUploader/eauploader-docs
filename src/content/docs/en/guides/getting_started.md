@@ -1,90 +1,85 @@
 ---
-title: Getting Started Guide for Beginners
-description: This guide is created by Project EAUploader, not by an avatar sales shop.
+title: 'Guide for New Users'
+description: 'This guide is not produced by an avatar shop, but by Project EAUploader.'
 ---
+## Precautions & Disclaimer
+* * *
+EAUploader is developed and provided as OSS (Open Source Software). It is not a product.
+Project EAUploader (uslog.tech) is not responsible for any damages that may occur as a result of using EAUploader.
 
-This guide is created by Project EAUploader, not by an avatar sales shop.
-
-![Official Character Ia Design Ebigohan](../../../../assets/ea.png)
-
-Official Character Ia Design Ebigohan
-
-## Notes and Disclaimers
-
-EAUploader is an open-source software tool developed and provided by Project EAUploader (uslog.tech). It is not a commercial product.
-Project EAUploader (uslog.tech) is not responsible for any damages caused by the use of EAUploader.
-
-Unity has various bugs. Occasionally, unexpected and unsolvable bugs or crashes may occur. In the worst case, the project may become unlaunchable (project corruption).
-Please make sure to back up your project (refer to the section "How to Back Up After Installation" on this page).
+Unity has various bugs. Occasionally, unpredictable, unresolved bugs or crashes may occur. In the worst case, the project may fail to launch (the project may break).
+Please make sure to back up your projects.
 Also, please save important data such as avatar data outside of the project.
 
-## Description of Installation Contents
-
+## Description of What to Install
+* * *
 ### Software to Install
 
-**- Unity Hub**
-- Software for managing Unity (Unity has multiple versions, each being an independent software. Unity Hub is used to manage and authenticate licenses for Unity)
+**・Unity Hub**
+- A software to manage Unity.
+  (Since Unity has many versions, each acting as independent software, Unity Hub manages and authenticates licenses for Unity.)
 
-**- Unity Editor**
-- The main Unity software. However, in this guide, we will use Creator Companion for automatic installation.
+**・Unity Editor**
+- The main body of Unity. However, in this guide, it will be installed automatically using the following Creator Companion.
 
-**- Creator Companion**
-- Unity project management software distributed by VRChat. It is commonly referred to as VCC.
+**・Creator Companion**
+- A Unity project management software distributed by VRChat.
+  Commonly known as VCC.
 
-**Packages to Install (Additional Features/Tools to Install in Unity)**
+**Packages to Install (Additional features and tools to install in Unity)**
 
-**- VRCSDK**
+**・VRCSDK**
 - A package distributed by VRChat for creating, editing, and uploading avatars and worlds. It is automatically added to projects created with VCC.
 
-**- EAUploader**
-- The main EAUploader software. It runs on Unity.
+**・EAUploader**
+- The main body of EAUploader. It operates within Unity.
 
-Operations in EAUploader involve making changes to Unity. Unity normally maintains the working state, so it does not perform save operations when exiting.
-Uploading avatars with EAUploader uses the functionality of VRCSDK, so it is the same as uploading with VRCSDK.
+Operations in EAUploader make changes in Unity. Unity does not save changes automatically to maintain the usual work state.
+  Uploading avatars through EAUploader uses the features of VRCSDK and is the same as uploading using VRCSDK.
 
-### When You're Stuck
+### If You Have Problems
 
 <aside>
-💡 If you encounter problems or issues that cannot be resolved during the installation or use of EAUploader:
+💡 If you encounter problems during the installation or use of EAUploader, or if something happens that is not explained and you cannot resolve it
 </aside>
 
 - Please join the official EAUploader Discord server. ▷ [https://discord.gg/yYFru7brra](https://discord.gg/yYFru7brra)
-- If the URL is not accessible, please check the official website. ▷ [https://eauploader.uslog.tech](https://eauploader.uslog.tech/)
+- If the URL is not available, please check the official website. ▷ [https://eauploader.uslog.tech](https://eauploader.uslog.tech/)
 
 <aside>
-💡 If you encounter problems with Unity or VRCSDK, or have issues related to purchased avatars, gimmicks, or tools:
+💡 If you encounter problems with Unity or VRCSDK, or issues related to purchased avatars, gimmicks, or tools
 </aside>
 
-- Please seek support from the respective distributors.
-- If there is no support available, seek help from other sources.
+- Please seek support from their respective distributors.
+- If there is no support available, seek help elsewhere, such as on platform X.
 
-## Installation Instructions
-
+## How to Install
+* * *
 ### Download Unity Hub
 
-Download UnityHub from the following link:
-[https://unity.com/ja/download](https://unity.com/ja/download)
+Download Unity Hub from the following link:
+[https://unity.com/download](https://unity.com/download)
 
 ![Untitled](getting_started/1.png)
 
 ### Launch Unity Hub
 
 Run the downloaded file UnityHubSetup.exe.
-After launching, you will be prompted to sign in as shown below.
+After launching, you will be asked to sign in.
 
 ![Untitled](getting_started/2.png)
 
-If you are a first-time user, click "Create account" below the Sign In button to create an account.
+If you are new, click <span style="color: #00B0F0">Create account</span> below the Sign In button.
 
-### Complete Sign In
+### Complete the Sign-In
 
-Follow the on-screen instructions to create an account and complete the sign-in process.
+Follow the screens to create an account and sign in.
 
 ![Untitled](getting_started/3.png)
 
-After signing in, click "Got it" to proceed.
+Once signed in, click <span style="color: #00b0f0">Got it</span> to proceed.
 
-*The display may vary depending on the version of Unity Hub.
+*Note: The display may vary depending on the version of Unity Hub*
 
 ### Skip Install Unity Editor
 
@@ -92,39 +87,41 @@ You will be taken to the Unity Editor installation screen.
 
 ![Untitled](getting_started/4.png)
 
-Click "Skip installation" to skip this step. We will install it later from VCC.
+Click <span style="color: #00b0f0">Skip installation</span> to skip this step.
+Later, the installation will be done through VCC.
 
 ### License Authentication
 
-You will be taken back to the regular Unity Hub screen. A message requesting license authentication will appear at the top.
+You will return to the normal screen of Unity Hub. A message asking for license authentication will appear.
 
 ![Untitled](getting_started/5.png)
 
-Click the button in the upper right corner to go to the license authentication screen.
+Go to the license authentication screen from the button in the upper right corner.
 
-### Add License
+### Add a License
 
-You will be taken to the license management screen. Make sure that no licenses are displayed in the list.
+You will move to the license management screen. Make sure no licenses are displayed.
 
 ![Untitled](getting_started/6.png)
 
-Click the "Add license" button.
+Click the <span style="color: #00b0f0">Add license</span> button.
 
-Proceed with the authentication using the personal license (free).
+Authenticate with a personal license (free).
 
 ![Untitled](getting_started/7.png)
 
-Click the "Get a free personal license" button. This license allows you to use all the regular features of Unity. The license is valid for your Unity account.
+Click the <span style="color: #00b0f0">Get a free personal license</span> button. This license allows you to use all the regular features of Unity.
+The license will be activated for your Unity account.
 
-*As long as the license authentication is successful, you can use other authentication methods if desired.
+*It's okay to authenticate using another method as long as the license is authenticated.*
 
-Agree to the license terms and obtain the license.
+Agree and obtain the license.
 
 ![Untitled](getting_started/8.png)
 
-This is the agreement for Unity. Please review the content and agree to it.
+This is an agreement with Unity. Please check the content and agree.
 
-Once you have added the license, your operations in Unity Hub are complete.
+Once you've added the license, you're done with the operations in Unity Hub.
 
 ### Install Creator Companion
 
@@ -133,9 +130,9 @@ Download the project management software distributed by VRChat from the followin
 
 ![Untitled](getting_started/9.png)
 
-Be careful as there are multiple download buttons. Click "Download the Creator Companion" to download it.
+Be careful as there are several download buttons. Click <span style="color: #00b0f0">Download the Creator Companion</span> to download.
 
-*This is the software known as VCC.
+*This software is referred to as VCC.*
 
 Run the downloaded file and proceed with the installation.
 
@@ -143,37 +140,37 @@ Run the downloaded file and proceed with the installation.
 
 ### Launch VCC
 
-After the installation is complete, launch VCC. The setup guide will start.
+Once installed, start the software. Guidance will begin.
 
 ![Untitled](getting_started/11.png)
 
-Click "Show Me Around" to start the tutorial.
+Click <span style="color: #00b0f0">Show Me Around</span> to start the tutorial.
 
-As you progress, you will be taken to the following screen.
+Proceed, and you will move to the following screen.
 
 ![Untitled](getting_started/12.png)
 
-Click "Continue" to proceed.
+Click <span style="color: #00b0f0">Continue</span> to proceed.
 
 ### Install Unity Editor
 
-After a short loading time, a log will appear stating that Unity Editor cannot be found.
+After a brief loading time, a log stating that the Unity Editor is not found will appear.
 
 ![Untitled](getting_started/13.png)
 
-Click "Continue" to proceed.
+Click <span style="color: #00b0f0">Continue</span> to proceed.
 
-You will be prompted to install Unity.
+You will be guided to install Unity.
 
 ![Untitled](getting_started/14.png)
 
-Click "Install Unity" to proceed.
+Click <span style="color: #00b0f0">Install Unity</span> to proceed.
 
 ![Untitled](getting_started/15.png)
 
-This is the installation screen for the latest recommended version of Unity by the official website. Click the "Install" button to install it.
+You will see the installation screen for the latest version of Unity recommended by the official. Click the Install button to proceed with the installation.
 
-*Unity installation may take some time.
+*Note: Installing Unity may take some time*
 
 ### Unity Installation Complete
 
@@ -181,46 +178,46 @@ Once the installation is complete, the screen will transition.
 
 ![Untitled](getting_started/16.png)
 
-Click "Continue" to proceed.
+Click <span style="color: #00b0f0">Continue</span> to proceed.
 
-### Unity Ready
+### Unity Setup Complete
 
-Unity and VCC setup are complete.
+You have completed the setup of Unity and VCC.
 
 ![Untitled](getting_started/17.png)
 
-Next, click "Create New Project" to create a new project.
+Next, create a new project by selecting <span style="color: #00b0f0">Create New Project</span>.
 
-### Creating a Project
+### Create a Project
 
-Projects are divided into four main types.
-There are two types of projects for avatars and worlds, each for Unity 2019 and 2022.
+Projects are broadly divided into four types.
+There are two types of projects for avatars and worlds each for Unity 2019 and 2022.
 
 ![Untitled](getting_started/18.png)
 
-Select "Unity 2022 Avatar Project". Enter a suitable name for the Project Name.
-However, please do not use full-width characters. It may cause upload issues. Please use only alphanumeric characters and symbols.
+Please select <span style="color: #00b0f0">Unity 2022 Avatar Project</span>. Give the project a suitable name.
+However, do not use full-width characters. It can cause issues during upload. Use only alphanumeric and symbols.
 
-After entering the name, click "Create Project" to proceed.
+After entering, select <span style="color: #00b0f0">Create Project</span> to proceed.
 
-### Adding EAUploader (Adding EAUploader to VCC)
+### Add EAUploader (Add EAUploader to VCC)
 
-You will be taken to the project management screen. VCC packages can be added, updated, or removed from here.
+You will move to the project management screen. VCC packages can be added, updated, or deleted from here.
 
 To add EAUploader to VCC, click [here](https://eauploader.uslog.tech/).
 
 ![Untitled](getting_started/19.png)
 
 A popup will automatically appear in VCC.
-Click "I Understand, Add Repository" to add EAUploader to VCC.
+Click <span style="color: #00b0f0">I Understand, Add Repository</span> to add EAUploader to VCC.
 
-Search for "Easy Avatar Uploader for EAUploader" in the Manage Packages section and click the "+" button to add it.
+Find Easy Avatar Uploader for EAUploader in Manage Packages and click the ⊕ button to add it.
 
 ![Untitled](getting_started/20.png)
 
-### Launching the Project
+### Launch the Project
 
-Click "Open Project" in the upper right corner to launch the project.
+Launch from <span style="color: #00b0f0">Open Project</span> in the upper right corner.
 
 ![Untitled](getting_started/21.png)
 
@@ -232,95 +229,83 @@ You are now ready to upload avatars.
 
 If you want to use VRM avatars, please refer to the separate guide "Using VRM".
 
-In the project, you can also make modifications to avatars using EAUploader and then continue working in the regular Unity editor.
+In the project, you can close EAUploader and modify the avatar as a regular Unity editor.
 
-The bottom left button is for exiting. If you want to close EAUploader, click the "x" in the upper right corner.
+The button in the lower left is the exit button. To close EAUploader, click ✕ in the upper right corner.
 
-## After Installation
-
-### Guide within the Tool
+## How to Use the Tool
+* * *
+### In-Tool Guide
 
 EAUploader has a guide within the tool.
 
 ![Untitled](getting_started/23.png)
 
-Please read the guide within the tool for instructions on how to use the tool, shaders, plugins, and uploading avatars.
+Please read the in-tool guide for explanations on tools, shaders, plugins, uploads, and related work.
 
-### How to Back Up After Installation
+### How to Back Up
 
-In the VCC project list, click the "..." on the right side of the project for which you want to back up.
+In the VCC project list, click the ... on the far right of the project you want to back up.
 
 ![Untitled](getting_started/24.png)
 
-The backup location can be confirmed and changed in the "Backups" section under VCC settings.
+The backup location can be confirmed in Settings at the bottom left of VCC, under Backups. You can also change it here.
 
 ![Untitled](getting_started/25.png)
 
 ## Information
-
-### Official Community Information
+* * *
+### Official Community
 
 Please join the official EAUploader Discord server.
-Updates and the latest information about the project are announced there.
+We announce updates and the latest project information.
 
-You can also provide feedback and suggestions for EAUploader.
+You can also provide feedback and suggestions to EAUploader.
 
-We highly recommend joining.
-[https://discord.gg/yYFru7brra](https://discord.gg/yYFru7brra)
+Please join us.
+https://discord.gg/yYFru7brra
 
 ![Untitled](getting_started/26.png)
 
-### Official Event Information
+### Official VRChat Group
 
-We hold events every other Sunday at 21:00 in VRChat.
-We provide progress reports, announcements, and networking opportunities.
+We host events on VRChat.
+Also, please join us when introducing EAUploader or for reference links.
 
-Please join us.
+https://vrc.group/EAUP.0512
 
-Developers also participate regularly.
-
-▽ Join the VRChat group
-[https://vrc.group/EAUP.0512](https://vrc.group/EAUP.0512)
-
-![Untitled](getting_started/27.png)
-
-### Developer and Support Creator Recruitment
+### Developer & Support Creator Recruitment
 
 ![Untitled](getting_started/28.png)
 
-### When You're Stuck
+### If You Have Problems
 
 <aside>
-💡 If you encounter problems or issues that cannot be resolved during the installation or use of EAUploader:
+💡 If you encounter problems during the installation or use of EAUploader, or if something happens that is not explained and you cannot resolve it
+
 </aside>
 
 - Please join the official EAUploader Discord server. ▷ [https://discord.gg/yYFru7brra](https://discord.gg/yYFru7brra)
-- If the URL is not accessible, please check the official website. ▷ [https://eauploader.uslog.tech](https://eauploader.uslog.tech/)
+- If the URL is not available, please check the official website. ▷ [https://eauploader.uslog.tech](https://eauploader.uslog.tech/)
 
 <aside>
-💡 If you encounter problems with Unity or VRCSDK, or have issues related to purchased avatars, gimmicks, or tools:
+💡 If you encounter problems with Unity or VRCSDK, or issues related to purchased avatars, gimmicks, or tools
+
 </aside>
 
-- Please seek support from the respective distributors.
-- If there is no support available, seek help from other sources.
+- Please seek support from their respective distributors.
+- If there is no support available, seek help elsewhere, such as on platform X.
 
-### Contact
+### Contact Us
 
-For inquiries to Project EAUploader or USLOG (uslog.tech), whether as an individual or a corporation, please use the following link:
+For inquiries from both individuals and corporations to Project EAUploader or the operating entity USLOG, please use the following link.
 
 [https://uslog.tech/contact](https://uslog.tech/contact)
 
-Getting Started Guide for Beginners v1.0
-May 15, 2024
+Guide for New Users v1.1
+
+July 25, 2024
+
 USLOG (uslog.tech)
+
 Project EAUploader
-
-## Option
-
-### Launching the Project (Package Import)
-
-You will be taken to the project management screen. VCC packages can be added, updated, or removed from here.
-
-![Untitled](getting_started/29.png)
-
-Without making any changes, click "Open Project" to launch Unity.

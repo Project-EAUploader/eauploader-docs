@@ -76,6 +76,21 @@ export default defineConfig({
           ],
         },
         {
+          label: "For Tool Developers",
+          translations: {
+            ja: "ツール製作者向け",
+          },
+          items: [
+            {
+              label: "Quick start guidance",
+              translations: {
+                ja: "クイックスタートガイダンス"
+              },
+              slug: "for_tooldev/extension",
+            },
+          ],
+        },
+        {
           label: "For Developers",
           translations: {
             ja: "開発者向け",
@@ -102,13 +117,6 @@ export default defineConfig({
             {
               label: "Runtime",
               slug: "for_dev/runtime",
-            },
-            {
-              label: "Extension Development",
-              translations: {
-                ja: "拡張機能開発",
-              },
-              slug: "for_dev/extension",
             },
             {
               label: "Logging",

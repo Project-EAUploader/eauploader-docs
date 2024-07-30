@@ -76,5 +76,3 @@ If the user clicks the button indicating the intention to send in the aforementi
 
 If the log file sending process is successful, the user will be shown a completion message and the log file GUID. If the log file sending process fails, the user will be shown a message indicating the failure.
 
-That's it.
-

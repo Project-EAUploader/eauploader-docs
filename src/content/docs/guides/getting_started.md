@@ -2,25 +2,17 @@
 title: 初めての方向けガイド
 description: このガイドはアバター販売ショップが制作したものでなく、Project EAUploader が制作したものです。
 ---
-
-このガイドはアバター販売ショップが制作したものでなく、Project EAUploader が制作したものです。
-
-![公式キャラクター　いあ　デザイン　えびごはん](../../../assets/ea.png)
-
-公式キャラクター　いあ　デザイン　えびごはん
-
 ## 注意事項・免責事項
-
+* * *
 EAUploader は OSS(オープンソースソフトウェア)として開発、提供しているツールです。これは製品ではありません。
 EAUploader を使用して発生したあらゆる損害について、Project EAUplaoder(uslog.tech)はいかなる責任も負いません。
 
 Unity は様々なバグを抱えています。希に、予測されていない、解決できないバグやクラッシュが発生することがあります。最悪、プロジェクトが起動できなくなります(プロジェクトが壊れる)。
-プロジェクトはバックアップをとるようにしてください([本ページ 導入後 バックアップのとり方 を参照](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21))。
+プロジェクトはバックアップをとるようにしてください。
 また、アバターのデータなど大切なデータはプロジェクト外にも保存するようにしてください。
 
-
 ## 導入内容の説明
-
+* * *
 ### 導入するソフトウェア
 
 **・Unity Hub**
@@ -66,7 +58,7 @@ EAUploader での操作は Unity に変更を行うものです。Unity は通�
 - サポートがない場合は X などで助けを求めてください。
 
 ## 導入の方法
-
+* * *
 ### Unity Hub のダウンロード
 
 以下のリンクから、UnityHub をダウンロードします。
@@ -245,8 +237,8 @@ VRM アバターを使用したい場合は別ガイド「VRM を使用する」
 
 左下は終了ボタンです。EAUplaoder を閉じる場合は右上の ✕ から閉じてください。
 
-## 導入後
-
+## ツールの使い方
+* * *
 ### ツール内のガイド
 
 EAUploader はツール内にガイドがあります。
@@ -266,32 +258,25 @@ VCC のプロジェクト一覧にて、バックアップをとりたいプロ�
 ![Untitled](getting_started/25.png)
 
 ## ご案内
-
-### 公式コミュニティのご案内
+* * *
+### 公式コミュニティ
 
 EAUploader の公式 Discord サーバーへ是非ご参加ください。
 アップデートや、プロジェクトの最新情報を告知しています。
 
 また、EAUploader へのご意見、ご提案も可能です。
 
-是非、ご参加いただきたく思います。
-[https://discord.gg/yYFru7brra](https://discord.gg/yYFru7brra)
+是非、ご参加ください。
+https://discord.gg/yYFru7brra
 
 ![Untitled](getting_started/26.png)
 
-### 公式イベントのご案内
+### 公式VRChatグループ
 
-VRChat にて隔週日曜日 21:00 よりイベントを開催しています。
-プロジェクトの進捗報告、告知と交流会を行っています。
+VRChatにてイベントを開催しています。
+また、EAUploaderを紹介する際などにリンクの参照として是非ご参加ください。
 
-是非ご参加ください。
-
-開発者も通常参加しています。
-
-▽ VRChat グループに参加
-[https://vrc.group/EAUP.0512](https://vrc.group/EAUP.0512)
-
-![Untitled](getting_started/27.png)
+https://vrc.group/EAUP.0512
 
 ### 開発者・サポートクリエイター募集
 
@@ -321,40 +306,10 @@ VRChat にて隔週日曜日 21:00 よりイベントを開催しています。
 
 [https://uslog.tech/contact](https://uslog.tech/contact)
 
-初めての方向けガイド　 v1.0
-2024 年 5 月 15 日
+初めての方向けガイド v1.1
+
+2024 年 7 月 25 日
+
 USLOG (uslog.tech)
+
 Project EAUploader
-
-## Option
-
-### プロジェクトの起動（パッケージ Import）
-
-プロジェクトの管理画面に遷移します。VCC パッケージはここから追加、更新、削除することができます。
-
-![Untitled](getting_started/29.png)
-
-何も変更せず<span style="color: #00b0f0">Open Project</span>をクリックしてください。Unity が起動します。
-
-ここからは従来のパッケージをインポートして追加する方法での説明です。
-特別な理由がない場合は、これより前にある「[VCC に EAUploader を追加](https://www.notion.so/0242373641d6453daf917dbc912e8293?pvs=21)」する方法で EAUploader を導入してください。
-
-### EAUploader を追加
-
-Unity が起動したら、ダウンロードした EAUploader のフォルダから Unity パッケージをドラック＆ドロップで追加します。
-
-![Untitled](getting_started/30.png)
-
-デフォルトの Unity の画面です。赤枠の中にファイルをドラックしてください。
-
-![Untitled](getting_started/31.png)
-
-インポート画面が表示されます。Import を押してインポートします。
-
-![Untitled](getting_started/32.png)
-
-インポート後、しばらくすると EAUploader が自動でプロジェクトに追加され、起動します。
-
-このパッケージは EAUploader を VCC に追加するものです。インポート後、VCC には Easy Avatar Uploader for VRChat が追加されています。
-
-２つ目以降のプロジェクトは、VCC で EAUploader を追加してください。
