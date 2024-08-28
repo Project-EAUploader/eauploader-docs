@@ -76,17 +76,17 @@ export default defineConfig({
           ],
         },
         {
-          label: "For Tool Developers",
+          label: "F&Q",
           translations: {
-            ja: "ツール製作者向け",
+            ja: "F&Q",
           },
           items: [
             {
-              label: "Quick start guidance",
+              label: "Missing Shader",
               translations: {
-                ja: "クイックスタートガイダンス"
+                ja: "シェーダーが見つからないエラー",
               },
-              slug: "for_tooldev/extension",
+              slug: "faq/missing_shader",
             },
           ],
         },
